@@ -19,8 +19,10 @@ This framework addresses that limitation by:
 - Metrics for each subset (e.g., average case duration)
 - Visualization of query impact and counterfactual paths
 
+![Image](https://github.com/user-attachments/assets/405f1fce-ca31-4c08-aec2-1f241a8abbc3)
+
 ## Use Case
 
-Tested on the **BPI Challenge 2017** dataset, the framework supports multi-step filtering (e.g., credit score, loan amount, application type) and reveals how each decision affects the dataset.
+Tested on the **BPI Challenge 2017** dataset.
 
 
