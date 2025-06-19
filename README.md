@@ -12,9 +12,9 @@ This framework addresses that limitation by:
 - Computing statistics (e.g., case count, duration) across each branch.
 - Visualizing query paths using interactive charts.
 
-![Image](https://github.com/user-attachments/assets/a5c4a0d4-1097-456d-b765-112a2f94a4d7)
-![Image](https://github.com/user-attachments/assets/1dcbcf09-3ed1-441a-8acd-ab62ceda23a3)
-![Image](https://github.com/user-attachments/assets/09ad9a1d-2aa7-4aa0-b080-6ca33bce0979)
+<img src="https://github.com/user-attachments/assets/a5c4a0d4-1097-456d-b765-112a2f94a4d7" width="500"/>
+<img src="https://github.com/user-attachments/assets/1dcbcf09-3ed1-441a-8acd-ab62ceda23a3" width="500"/>
+<img src="https://github.com/user-attachments/assets/09ad9a1d-2aa7-4aa0-b080-6ca33bce0979" width="500"/>
 
 ## Use Case
 
