@@ -471,6 +471,8 @@ def get_sibling_subsets(result_set_name, log_view):
     return parent_log, query_obj, label, step_index, lineage_df
 
 def pie(result_set_name, log_view, metric="avg_case_duration_seconds", details=True):
+    from plotly.colors import sample_colorscale
+    import plotly.graph_objects as go
 
     def format_seconds(seconds):
         seconds = int(seconds)
@@ -552,6 +554,9 @@ def pie(result_set_name, log_view, metric="avg_case_duration_seconds", details=T
         .reset_index()
     )
 
+    # Add line breaks for hover display
+    grouped["wrapped_path"] = grouped["path_label"].str.replace(" → ", " →<br>")
+
     # Normalize color
     min_val, max_val = grouped["avg_metric"].min(), grouped["avg_metric"].max()
     normed = (grouped["avg_metric"] - min_val) / (max_val - min_val + 1e-9)
@@ -572,12 +577,8 @@ def pie(result_set_name, log_view, metric="avg_case_duration_seconds", details=T
             labels=grouped["slice_label"],
             values=grouped["num_cases"],
             textinfo="label",
-            customdata=grouped[["path_label", "num_cases", "avg_metric"]],
-            hovertemplate=(
-                "<b>%{customdata[0]}</b><br>" +
-                "Cases: %{customdata[1]:,}<br>" +
-                color_title + ": %{customdata[2]:.2f}<extra></extra>"
-            ),
+            customdata=grouped[["wrapped_path"]],
+            hovertemplate="<b>%{customdata[0]}</b><extra></extra>",
             marker=dict(colors=color_values)
         )],
         layout=go.Layout(
