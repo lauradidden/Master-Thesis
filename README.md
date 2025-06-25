@@ -1,6 +1,6 @@
 # Visualizing Sequential Queries in Process Mining
 
-This project introduces a framework for **systematically tracking and visualizing the effects of sequential queries** in exploratory process mining. It is designed to support analysts in understanding how each filtering decision shapes their view of the process and to provide transparency throughout the analysis.
+This project introduces a framework for systematically tracking and visualizing the effects of sequential queries in exploratory process mining. It is designed to support analysts in understanding how each filtering decision shapes their view of the process and to provide transparency throughout the analysis.
 
 ## Overview
 
@@ -12,7 +12,9 @@ This framework addresses that limitation by:
 - Computing statistics (e.g., case count, duration) across each branch.
 - Visualizing query paths using interactive charts.
 
-![Image](https://github.com/user-attachments/assets/405f1fce-ca31-4c08-aec2-1f241a8abbc3)
+<img src="https://github.com/user-attachments/assets/a5c4a0d4-1097-456d-b765-112a2f94a4d7" width="500"/>
+<img src="https://github.com/user-attachments/assets/1dcbcf09-3ed1-441a-8acd-ab62ceda23a3" width="500"/>
+<img src="https://github.com/user-attachments/assets/09ad9a1d-2aa7-4aa0-b080-6ca33bce0979" width="500"/>
 
 ## Use Case
 
